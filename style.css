@@ -1,0 +1,112 @@
+@font-face{
+    font-family: 'OpenSans-Semibold';
+    src: url(fonts/OpenSans-Semibold.ttf);    
+}
+@font-face{
+    font-family: 'OpenSans';
+    src: url(fonts/OpenSans-Regular.ttf);    
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    font-family: 'OpenSans';
+}
+.header-bg h1{
+    width: 100%;
+    font-family: 'OpenSans-Semibold';
+    font-size: 5em;
+    color: #fff;
+}
+.header-bg p{
+    max-width: 80%;
+    font-size: 2em;
+    color: #fff;
+    margin: 0 auto;
+}
+.header-bg{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 160px 0;
+    text-align: center;
+}
+.talents{
+    margin-top: 60px;
+}
+.talent-block{
+    padding: 30px;
+    box-shadow:none;
+    position:relative;
+    margin-right: 30px;
+}
+.talent-block:after{
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background: white;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:-1;
+    box-shadow: 0px 5px 30px 0px;   
+}
+@media (min-width:769px){
+    .talents-top, .talents-bottom{
+        flex-wrap: nowrap !important;
+    }
+}
+.talents-top{
+    margin-bottom: 30px;
+}
+.img-wrapper{
+    max-width: 100%;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.desc{
+    margin-top: 10px;
+    font-size: 20px;
+}
+footer{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .fa{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00acee;
+}
+.fa-instagram{
+    color: red;
+}
+@media (max-width:768px){
+    .header-bg h1{
+        font-size: 3em;
+    }
+    .header-bg p{
+        font-size: 14px;
+    }
+    .talents-top, .talents-bottom{
+        flex-wrap: wrap !important;
+    }
+    .talents-top, .talents-bottom{
+        padding: 0 15px;
+    }
+    .talent-block{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
